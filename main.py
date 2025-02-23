@@ -62,3 +62,49 @@ students2.append("ahmet")
 
 print(students)
 print(students2)
+
+# dögüler
+#indentation scopeları belirler
+for i in range(5):
+    print(i)
+    print("merhaba") # main> for scope
+print("for bitti")# main scope
+
+for i in range(5,10): # i isim bezerliği
+    print(i)
+   
+for i in range(5,50,5):
+    print(i)
+
+students3= ["ali","aybüke","büşra","deniz"]
+for student in students3:
+    print("hesaplama yapılıyor: "+ student)
+print("*********************************")
+for student in students3:
+    if student == "büşra":
+        continue # devam et döngüye
+    print("hesaplama yapılıyor: "+ student)
+print("*********************************")
+for student in students3:
+    if student == "büşra":
+        break # manuel olarak bitirmeyi hedefler
+    print("hesaplama yapılıyor: "+ student)
+
+
+#
+# while
+
+#while True: # while sonsuz döngü (infinite loop)
+  #  print("while")
+
+x=50
+while x<100:
+    print(x)
+    x+=1
+
+user_imput= input("kullanıcıdan değer alınız, cıkmak için q tuşuna basınız.")
+while user_imput!= "q":
+    print(f"girdiniz:  {user_imput}")
+    user_imput= input("kullanıcıdan değer alınız, cıkmak için q tuşuna basınız.")
+
+#
