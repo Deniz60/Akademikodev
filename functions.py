@@ -49,6 +49,15 @@ print(topla(5,7))
 selamla= lambda isim : print(f"merhaba {isim}")
 
 selamla("Deniz")
+def sum3(*args):
+    result=0
+    for arg in args:
+        result+=arg
+    return result
+
+print(sum3(1,5,67,34,32,23))
+    
+
 # Değişken sayıda anahtar-değer çifti alan fonksiyonlar için kullanılır.
 def example_function(**kwargs):
     for key, value in kwargs.items():
