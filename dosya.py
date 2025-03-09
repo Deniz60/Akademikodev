@@ -9,7 +9,7 @@ def dosyayi_Oku():
     with open('dosya.txt', 'r') as dosya:
         print("Dosyanın İçeriği: tanıtım")
         for satir in dosya:
-            print(satir.strip())
+            print(satir.strip()) #boşluklar için
 
 
 dosya_yaz()
